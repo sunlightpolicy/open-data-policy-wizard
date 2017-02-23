@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+</head>
+<body>
+  <? var vars = data; ?>
+  <p>This tool is a launchpad for future rounds of editing and fine-tuning, and we want you to be informed when it comes to editing this starter text for your place's policy. Please consider doing the following:</p>
+    <ol>
+      <li>Check out our <a href="https://sunlightfoundation.com/opendataguidelines/">Open Data Policy Guidelines</a> and take note of how they match up with this starter text</li>
+      <li>Compare the starter text to other policies by browsing <a href="http://www.opendatapolicies.org/">OpenDataPolicies.org</a></li>
+      <li>Edit your starter text as needed to prioritize the guidelines most important to your place</li>
+      <li>In the spirit of transparency, if you propose this policy, we strongly encourage you to cite where you got this sample text from (the <a href="https://sunlightfoundation.com/">Sunlight Foundation</a>)</li>
+    </ol>
+  <br>
+  <h2>Responses:</h2>
+  <br>
+  <p><em>Name:</em> <?= vars['Name'] ?></p>
+  <p><em>Short Name:</em> <?= vars['Short Name'] ?></p>
+  <p><em>Who:</em> <?= vars['Who'] ?></p>
+  <p><em>Manager:</em> <?= vars['Manager'] ?></p>
+  <p><em>Existing or New Position:</em> <?= vars['Existing or New Position'] ?></p>
+  <p><em>Number:</em> <?= vars['Number'] ?></p>
+  <p><em>Email:</em> <?= vars['Email'] ?></p>
+  <br>
+  <h2>Sample Text:</h2>
+  <br>
+  <p><strong>Draft Policy on Open Data for the <?= vars['Name'] ?></strong></p>
+  <p><strong><?= vars['Number'] ?></strong></p>
+  <br>
+  <p>WHEREAS, much of the data collected by the <?= vars['Name'] ?> (hereafter, “the <?= vars['Short Name'] ?>”) is stored in ways which impede the ability to aggregate, analyze and synthesize it to better allocate public resources; and</p>
+  <p>WHEREAS, access to public information promotes a higher level of civic engagement and allows citizens to provide valuable feedback to government officials regarding local issues; and</p>
+  <p>WHEREAS, every citizen has the right to prompt, efficient service from the government; and</p>
+  <p>WHEREAS, the thoughtful implementation of an open data program improves provision of services, increases transparency and access to public information, and enhances coordination and efficiencies among departments, partner organizations and citizens; and </p>
+  <p>WHEREAS, one goal of an Open Data policy is to proactively provide information currently sought through public records requests, thereby saving the <?= vars['Short Name'] ?> time and money; and</p>
+  <p>WHEREAS, in commitment to the spirit of Open Government, the <?= vars['Short Name'] ?> will consider public information to be open by default and will proactively publish data and data containing information, consistent with relevant public records law; and</p>
+  <p>WHEREAS, information technologies, including web-based and other Internet applications and services, are an essential means for Open Government, and good government generally; and</p>
+  <p>WHEREAS, by publishing structured standardized data in machine readable formats the <?= vars['Short Name'] ?> seeks to encourage the local software community to develop software applications and tools to collect, organize, and share public record data in new and innovative ways; and</p>
+  <p>WHEREAS, the protection of privacy, confidentiality and security will be maintained as a paramount priority while also advancing the government’s transparency and accountability through open data.</p>
+  <p>NOW, THEREFORE, BE IT RESOLVED by the <?= vars['Who'] ?> of the <?= vars['Name'] ?> that:</p>
+  <br>
+  <h3>Section 1: Definitions</h3>
+  <ol type="a">
+    <li>“Data” means statistical, factual, quantitative, or qualitative information that is maintained or created by or on behalf of a <?= vars['Short Name'] ?> agency. This definition is inclusive of software source code developed or maintained by or on behalf of the <?= vars['Short Name'] ?>.</li>
+    <li>“Open data” means data that is available online, in an open format, with no legal encumbrances on use or reuse, and is available for all to access and download in full without fees [or a requirement of registration]. “Legal encumbrance” includes federal copyright protections and other, non-statutory legal limitations on how or under what conditions a dataset may be used. This definition is also inclusive of any software source code made available online (“open source software”).</li>
+    <li>“Open format” means any widely accepted, nonproprietary, platform-independent, machine-readable data format, which permits automated processing of such data and facilitates analysis and search capabilities.</li>
+    <li>“Dataset” means a named collection of related records, with the collection containing data organized or formatted in a specific or prescribed way, often in tabular form.</li>
+    <li>“Protected information” means any dataset or portion thereof to which an agency may deny access pursuant to the [state or city public records statute] or any other law or rule or regulation. </li>
+    <li>“Sensitive information” means any data which, if published by the <?= vars['Short Name'] ?> online, could raise privacy, confidentiality or security concerns or have the potential to jeopardize public health, safety or welfare to an extent that is greater than the potential public benefit of publishing that data. </li>
+    <li>“Publishable data” means data which is not protected or sensitive and which has been prepared for release to the public.</li>
+  </ol>
+  <br>
+  <h3>Section 2: Open Data Program</h3>
+  <ol type="a">
+    <li>the <?= vars['Short Name'] ?> commits to develop and implement practices that will allow it to:
+      <ol type="1">
+        <li>Proactively release all publishable <?= vars['Short Name'] ?> data, making it freely available in appropriately varied and useful open formats, using an open license with no restrictions on use or reuse, and fully accessible to the broadest range of users to use for varying purposes;</li>
+        <li>Publish high quality, updated data with documentation (metadata) and permanence to encourage maximum use;</li>
+        <li>Provide or support access to free, historical archives of all released <?= vars['Short Name'] ?> data; </li>
+        <li>Measure the effectiveness of datasets made available through the Open Data Program by connecting open data efforts to the <?= vars['Short Name'] ?>’s programmatic priorities;</li>
+        <li>Minimize limitations on the disclosure of public information while appropriately safeguarding protected and sensitive information; and </li>
+        <li>Support innovative uses of the <?= vars['Short Name'] ?>’s publishable data by agencies, the public, and other partners.</li>
+      </ol>
+    </li>
+    <li>The development and implementation of these practices shall be overseen by the <?= vars['Manager'] ?>, reporting to the <?= vars['Who'] ?> [or to the <?= vars['Who'] ?>’s designee].</li>
+    <li>The requirements of this Order shall apply to any <?= vars['Short Name'] ?> department, office, administrative unit, commission, board, advisory committee or other division of <?= vars['Short Name'] ?> government (“agency”), including the records of third party agency contractors that create or acquire information, records, or data on behalf of a <?= vars['Short Name'] ?> agency.</li>
+    <li>Appropriate funding shall be made available to achieve the goals of this program.</li>
+  </ol>
+  <br>
+  <h3>Section 3: Governance</h3>
+  <ol type="a">
+    <li>Implementation of the Open Data Program will be overseen by the <?= vars['Manager'] ?>, who will work with the <?= vars['Short Name'] ?>’s departments and agencies to:
+      <ol type="1">
+        <li>For each <?= vars['Short Name'] ?> agency, identify and publish appropriate contact information for a lead open data coordinator who will be responsible for managing that agency’s participation in the Open Data Program; </li>
+        <li>Oversee the creation of a comprehensive inventory of datasets held by each <?= vars['Short Name'] ?> agency which is published to the central open data location and is regularly updated;</li>
+        <li>Develop and implement a process for determining the relative level of risk and public benefit associated with potentially sensitive, non-protected information so as to make a determination about whether and how to publish it; </li>
+        <li>Develop and implement a process for prioritizing the release of datasets which takes into account new and existing signals of interest from the public (such as the frequency of public records requests), the <?= vars['Short Name'] ?>'s programmatic priorities, existing opportunities for data use in the public interest, and cost;</li>
+        <li>Proactively consult with members of the public, agency staff, journalists, researchers, and other stakeholders to identify the datasets which will have the greatest benefit to <?= vars['Short Name'] ?> residents if published in a high quality manner;</li>
+        <li>Establish processes for publishing datasets to the central open data location, including processes for ensuring that datasets are high quality, up-to-date, are in use-appropriate formats, and exclude protected and sensitive information; </li>
+        <li>Ensure that appropriate metadata is provided for each dataset in order to facilitate its use; </li>
+        <li>Develop and oversee a routinely updated, public timeline for new dataset publication; and </li>
+        <li>Make recommendations for historical document inclusion,define a schedule for approved historical document publication</li>
+        <li>Ensure that published datasets are available for bulk download and/or available via public application programming interfaces (APIs) without legal encumbrance.</li>
+      </ol>
+    </li>
+    <li>In order to increase and improve use of the <?= vars['Short Name'] ?>’s open data, the <?= vars['Manager'] ?> will actively encourage agency and public participation through providing regular opportunities for feedback and collaboration.</li>
+  </ol>
+  <br>
+  <h3>Section 4: Central Online Location for Published Data</h3>
+  <ol type="a">
+    <li>the <?= vars['Short Name'] ?> will [create and] maintain a publicly available location on the <?= vars['Short Name'] ?>'s website or in another suitable online location where the <?= vars['Short Name'] ?>’s published data will be available for download.</li>
+    <li>Published datasets shall be placed into the public domain. Dedicating datasets to the public domain means that there are no restrictions or requirements placed on use of these datasets. </li>
+    <li>Each published dataset should be associated with contact information for the appropriate manager of that dataset as well as with a file layout or data dictionary that provides information about field labels and values.</li>
+    <li><?= vars['Short Name'] ?> departments will specify a recommended data citation form available for viewing on the central online location for published <?= vars['Short Name'] ?> data to encourage responsible reuse of <?= vars['Short Name'] ?> data.</li>
+  </ol>
+  <br>
+  <h3>Section 5: Open Data Report and Review</h3>
+  <ol type="a">
+    <li>Within one year of the effective date of this Executive Order, and thereafter no later than [date] of each year, the <?= vars['Manager'] ?> shall publish an annual Open Data Report. The report shall include an assessment of progress towards achievement of the goals of the <?= vars['Short Name'] ?>’s Open Data Program, an assessment of how the <?= vars['Short Name'] ?>’s open data work has furthered or will further the <?= vars['Short Name'] ?>’s programmatic priorities, and a description and publication timeline for datasets envisioned to be published by the <?= vars['Short Name'] ?> in the following year.  </li>
+    <li>During the review and reporting period, the <?= vars['Manager'] ?> should also make suggestions for improving the <?= vars['Short Name'] ?>’s open data management processes in order to ensure that the <?= vars['Short Name'] ?> continues to move towards the achievement of the policy’s goals. </li>
+  </ol>
+</body>
+</html>
