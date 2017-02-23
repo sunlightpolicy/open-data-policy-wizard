@@ -6,7 +6,7 @@ Please note that this repository does _not_ contain live code that runs the form
 
 `Text.html` contains the HTML template for the policy. The user inputs are used to fill in variable fields, with the resulting policy sent to the user via email and placed in a new Google Doc. (The email contains a link to the Google Doc.)
 
-`Code.js` contains the script that runs when a new form response is received. It's actually [Google Apps Script](https://developers.google.com/apps-script/) and not JavaScript and thus is titled `Code.gs` on Google's end; I only used `.js` here for syntax highlighting. The script has comments explaining what each part does.
+`Code.gs` contains the script that runs when a new form response is received. It's written in [Google Apps Script](https://developers.google.com/apps-script/), which is Google's version of JavaScript. The script has comments explaining what each part does.
 
 When the form is submitted, the `runWizard(e)` function runs, using the form-submission event as input. This is set up on the Script Editor interface by going to _Resources > Current project's triggers_ and then adding this trigger: _runWizard From form On form submit_. (I also suggest clicking on _notifications_ and setting up immediate email notifications for script failures.)
 
