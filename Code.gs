@@ -55,14 +55,14 @@ function runWizard(e) {
     pars[p].setSpacingAfter(14);
   }
   
-  // Add recipient as an editor on the Google Doc
-  doc.addEditor(answers['Email']);
+  // Give edit permissions to anyone with the link
+  DriveApp.getFileById(doc.getId()).setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.EDIT);
   
   // Send the email
   var doc_url = doc.getUrl();
   GmailApp.sendEmail(answers['Email'], 'Your sample open-data policy', '', {
     name: 'Sunlight Foundation',
     htmlBody: '<p>See a Google Docs version of this text: <a href="'+ doc_url + '">' +
-    doc_url + '</a></p><br><hr><br><br>' + htmlBody
+    doc_url + '</a></p><br>' + htmlBody
   });
 }
