@@ -56,10 +56,10 @@ function runWizard(e) {
   }
   
   // Add recipient as an editor on the Google Doc
-  var doc_url = doc.getUrl();
   doc.addEditor(answers['Email']);
   
   // Send the email
+  var doc_url = doc.getUrl();
   GmailApp.sendEmail(answers['Email'], 'Your sample open-data policy', '', {
     name: 'Sunlight Foundation',
     htmlBody: '<p>See a Google Docs version of this text: <a href="'+ doc_url + '">' +
