@@ -8,6 +8,6 @@ Please note that this repository does _not_ contain live code that runs the form
 
 `Code.gs` contains the script that runs when a new form response is received. It's written in [Google Apps Script](https://developers.google.com/apps-script/), which is Google's version of JavaScript. The script has comments explaining what each part does.
 
-When the form is submitted, the `runWizard(e)` function runs, using the form-submission event as input. This is set up on the Script Editor interface by going to _Resources > Current project's triggers_ and then adding this trigger: _runWizard From form On form submit_. (I also suggest clicking on _notifications_ and setting up immediate email notifications for script failures.)
+When the form is submitted, the `runWizard(e)` function runs, using the form-submission event as input. This is set up on the Script Editor interface by going to _Edit > Current project's triggers_ and then adding this trigger: _runWizard, Head, From form, On form submit_. (I also suggest clicking on _notifications_ and setting up immediate email notifications for script failures.)
 
 Note that a small portion of the code requires making use of the [Google Drive API](https://developers.google.com/drive/) for JavaScript. In order for this to work, you must go to _Resources > Advanced Google services..._ and enable _Drive API v2_. Using the link provided, you'll also need to enable it in the Google API Console.
